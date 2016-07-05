@@ -16,15 +16,5 @@
 		<url-pattern>/hello</url-pattern>
 	</servlet-mapping>
 	
-	<servlet>
- 		<servlet-name>Welcome</servlet-name>
-		<servlet-class>com.babel.servlets.Welcome</servlet-class>
-	</servlet>
-	
-	<servlet-mapping>
-		<servlet-name>Welcome</servlet-name>
-		<url-pattern>/welcome</url-pattern>
-	</servlet-mapping>
-	
 
 </web-app>     

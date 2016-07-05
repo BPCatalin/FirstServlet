@@ -13,7 +13,7 @@ public class FirstServlet extends HttpServlet{
 	 public void doGet(HttpServletRequest request, HttpServletResponse response)  
 	            throws ServletException, IOException {  
 	 response.setContentType("text/html");
-	 request.getRequestDispatcher("/WEB-INF/index.html").include( request, response ); 
+	request.getRequestDispatcher("index.jsp").include( request, response ); 
 
 	 }
 	 public void doPost(HttpServletRequest request, HttpServletResponse response)  
