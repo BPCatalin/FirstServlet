@@ -12,10 +12,13 @@ public class FirstServlet extends HttpServlet{
 
 	 public void doGet(HttpServletRequest request, HttpServletResponse response)  
 	            throws ServletException, IOException {  
-		
-	 PrintWriter out=response.getWriter();
 	 response.setContentType("text/html");
-	 out.println("Hello world!");
-	 out.close();
+	 request.getRequestDispatcher("/WEB-INF/index.html").include( request, response ); 
+
+	 }
+	 public void doPost(HttpServletRequest request, HttpServletResponse response)  
+	            throws ServletException, IOException { 
+		 
+		 doGet(request, response);
 	 }
 }
