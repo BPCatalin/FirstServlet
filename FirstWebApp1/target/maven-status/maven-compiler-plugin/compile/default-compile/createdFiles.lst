@@ -1,1 +1,2 @@
-com\babel\servlets\FirstServlet.class
+com\babel\servlets\Login.class
+com\babel\servlets\Welcome.class
