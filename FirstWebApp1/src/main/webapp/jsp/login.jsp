@@ -1,19 +1,23 @@
+ <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Login</title>
+        <title>JSP Example</title>
     </head>
-    <body>
-        <h1>Login Page</h1>
-        <fieldset>
-			<legend>Personal information:</legend>
-            <form action="Login" method="post">
-            <br/>Username:<input type="text" name="username">
-            <br/>Password:<input type="password" name="password">
-            <br/><input type="submit" value="Submit">
-            </form>
-           </fieldset>
+<body>
+        <form method="POST" action="Login">
+
+                <fieldset>
+						<legend>Login Page</legend>
+ 						Username<br> <input type="text" name="Username" value="" /><br> 
+                        Password<br> <input type="password" name="Password" value="" /><br> 
+                        
+                        <input type="submit" value="Login" /><br> 
+                        <input type="reset" value="Reset" /><br> 
+                
+                        <a href="register">Register Here</a><br> 
+ 				</fieldset>
+        </form>
     </body>
 </html>
-
- 

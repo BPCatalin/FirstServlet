@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+ 
+<hibernate-mapping>
+ <class name="com.babel.entities.User" table="Users">
+ <id name="UserId" type="int" column="UserID" >
+ <generator class="assigned"/>
+ </id>
+ <property name="username">
+ <column name="Username" />
+ </property>
+ <property name="Name">
+ <column name="Name" />
+ </property>
+  </class>
+</hibernate-mapping>

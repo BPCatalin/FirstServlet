@@ -1,28 +1,34 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE hibernate-configuration PUBLIC
-        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
-        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+          '-//Hibernate/Hibernate Configuration DTD 3.0//EN'
+          'http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd'>
+
 <hibernate-configuration>
-	<session-factory>
-		<property name="hibernate.dialect">
-			org.hibernate.dialect.MySQLDialect
-		</property>
-		<property name="hibernate.connection.driver_class">
-			com.mysql.jdbc.Driver
-		</property>
+    <session-factory>
+        <!-- Database connection settings -->
+        <property name='connection.driver_class'>com.mysql.jdbc.Driver</property>
+        <property name='connection.url'>jdbc:mysql://localhost:3307/hibernate4</property>
+        <property name='connection.username'>root</property>
+        <property name='connection.password'></property>
 
-		<!-- Assume test is the database name -->
-		<property name="hibernate.connection.url">
-			jdbc:mysql://localhost/taskmanagerfinal
-		</property>
-		<property name="hibernate.connection.username">
-			USERNAME
-		</property>
-		<property name="hibernate.connection.password">
-			PASSWORD
-		</property>
+        <!-- JDBC connection pool (use the built-in) -->
+        <property name='connection.pool_size'>1</property>
 
-		<!-- List of XML mapping files if they exist -->
+        <!-- SQL dialect -->
+        <property name='dialect'>org.hibernate.dialect.MySQLDialect</property>
 
-	</session-factory>
+        <!-- Echo all executed SQL to stdout -->
+        <property name='show_sql'>true</property>
+		<property name="hbm2ddl.auto">create</property>
+		
+		
+        <!-- Mapping files -->
+    	<mapping class="com.babel.entities.Users" />
+    	<mapping class="com.babel.data.UserConfig" />
+    	
+		<mapping class="com.babel.entities.UserRoles" />
+		<mapping class="com.babel.data.RoleConfig" />
+
+    	
+    </session-factory>
 </hibernate-configuration>

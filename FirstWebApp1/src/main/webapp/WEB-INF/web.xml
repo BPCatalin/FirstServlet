@@ -1,35 +1,46 @@
-<?xml version="1.0" encoding="ISO-8859-1" ?>
-
-<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
-    version="2.4">
-
-    <display-name>FirstWebApp</display-name>
- 		
-	<servlet>
-		<servlet-name>Login</servlet-name>
-		<servlet-class>com.babel.servlets.Login</servlet-class>
-	</servlet>
-	
-	<servlet>
- 		<servlet-name>Welcome</servlet-name>
-		<servlet-class>com.babel.servlets.Welcome</servlet-class>
-	</servlet>
-	
-	
-	<servlet-mapping>
-		<servlet-name>Login</servlet-name>
-		<url-pattern>/</url-pattern>
-	</servlet-mapping>
-	
-	<servlet-mapping>
-		<servlet-name>Welcome</servlet-name>
-		<url-pattern>/welcome</url-pattern>
-	</servlet-mapping>
-	
-	
-	
-
-
-</web-app>     
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.4">
+  <display-name>FirstWebApp</display-name>
+  <servlet>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>com.babel.servlets.Login</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Welcome</servlet-name>
+    <servlet-class>com.babel.servlets.Welcome</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Tasks</servlet-name>
+    <servlet-class>com.babel.servlets.Tasks</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Register</servlet-name>
+    <servlet-class>com.babel.servlets.Register</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Welcome</servlet-name>
+    <url-pattern>/welcome</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Tasks</servlet-name>
+    <url-pattern>/tasks</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Register</servlet-name>
+    <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>userRegistration</display-name>
+    <servlet-name>userRegistration</servlet-name>
+    <servlet-class>com.babel.servlets.userRegistration</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>userRegistration</servlet-name>
+    <url-pattern>/userRegistration</url-pattern>
+  </servlet-mapping>
+</web-app>

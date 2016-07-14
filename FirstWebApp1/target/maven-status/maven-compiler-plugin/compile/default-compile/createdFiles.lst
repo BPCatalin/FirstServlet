@@ -1,2 +1,10 @@
+com\babel\data\HibernateUtil.class
+com\babel\data\UserConfig.class
+com\babel\entities\UserRoles.class
+com\babel\data\RoleConfig.class
+com\babel\servlets\userRegistration.class
+com\babel\servlets\Tasks.class
+com\babel\entities\Users.class
 com\babel\servlets\Login.class
+com\babel\servlets\Register.class
 com\babel\servlets\Welcome.class
